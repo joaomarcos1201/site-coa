@@ -1,0 +1,35 @@
+.footer {
+  background: #2c3e50;
+  padding: 2rem 0;
+  margin-top: auto;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.footer-nav a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .footer-nav {
+    gap: 1rem;
+  }
+  
+  .footer-nav a {
+    font-size: 0.9rem;
+  }
+}

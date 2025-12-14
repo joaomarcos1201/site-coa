@@ -1,6 +1,6 @@
 .sobre {
   padding: 4rem 2rem;
-  background: #f8f9fa;
+  background: #fff;
 }
 
 .container {
@@ -10,14 +10,17 @@
 
 .sobre h2 {
   text-align: center;
-  color: #2c3e50;
+  color: #000;
   margin-bottom: 2rem;
   font-size: 2.5rem;
+  border-bottom: 3px solid #FFD700;
+  display: inline-block;
+  padding-bottom: 0.5rem;
 }
 
 .sobre-content p {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
-  color: #555;
+  color: #333;
 }

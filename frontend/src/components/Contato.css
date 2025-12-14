@@ -5,9 +5,12 @@
 
 .contato h2 {
   text-align: center;
-  color: #2c3e50;
+  color: #000;
   margin-bottom: 2rem;
   font-size: 2.5rem;
+  border-bottom: 3px solid #FFD700;
+  display: inline-block;
+  padding-bottom: 0.5rem;
 }
 
 .contato-form {
@@ -30,20 +33,23 @@
 .contato-form input:focus,
 .contato-form textarea:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: #FFD700;
 }
 
 .contato-form button {
-  background: #667eea;
-  color: white;
+  background: #FFD700;
+  color: #000;
   border: none;
   padding: 1rem;
   font-size: 1.1rem;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.3s;
+  font-weight: 600;
 }
 
 .contato-form button:hover {
-  background: #5a6fd8;
+  background: #FFC107;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
 }
