@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { apiService } from '../services/apiService';
 import './Contato.css';
 
 function Contato() {
@@ -15,9 +16,16 @@ function Contato() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Dados do formulário:', formData);
+    try {
+      await apiService.enviarContato(formData);
+      alert('Mensagem enviada com sucesso!');
+      setFormData({ nome: '', email: '', mensagem: '' });
+    } catch (error) {
+      console.error('Erro:', error);
+      alert('Erro ao enviar mensagem. Verifique sua conexão.');
+    }
   };
 
   return (

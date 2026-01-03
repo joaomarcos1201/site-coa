@@ -5,10 +5,11 @@ import Home from './components/Home.jsx';
 import Sobre from './components/Sobre.jsx';
 import Contato from './components/Contato.jsx';
 import Blog from './components/Blog.jsx';
+import PostView from './components/PostView.jsx';
 import Intercessor from './components/Intercessor.jsx';
 import Eventos from './components/Eventos.jsx';
 import Loja from './components/Loja.jsx';
-import Footer from './components/Footer.jsx';
+import Admin from './components/Admin.jsx';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -53,9 +54,11 @@ function App() {
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/post/:id" element={<PostView />} />
           <Route path="/intercessor" element={<Intercessor />} />
           <Route path="/eventos" element={<Eventos />} />
           <Route path="/loja" element={<Loja />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </div>
     </Router>

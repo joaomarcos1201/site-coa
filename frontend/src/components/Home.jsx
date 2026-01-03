@@ -5,8 +5,8 @@ function Home() {
     <main className="hero">
       <div className="hero-content">
         <h1>Bem-vindo ao COA</h1>
-        <p></p>
-        
+        <p>Soluções profissionais e inovadoras para o seu negócio</p>
+        <button className="cta-button">Saiba Mais</button>
       </div>
     </main>
   );
